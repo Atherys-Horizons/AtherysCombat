@@ -23,7 +23,7 @@ import java.io.IOException;
 import static com.atherys.combat.AtherysCombat.*;
 
 @Plugin(id = ID, version = VERSION, name = NAME, description = DESCRIPTION, dependencies = {
-        @Dependency(id = "atheryscode")
+        @Dependency(id = "atheryscore")
 })
 public class AtherysCombat {
 
