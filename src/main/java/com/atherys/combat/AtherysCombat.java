@@ -13,6 +13,7 @@ import org.spongepowered.api.event.Order;
 import org.spongepowered.api.event.game.state.GameInitializationEvent;
 import org.spongepowered.api.event.game.state.GameStartingServerEvent;
 import org.spongepowered.api.event.game.state.GameStoppingServerEvent;
+import org.spongepowered.api.plugin.Dependency;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.plugin.PluginContainer;
 
@@ -21,7 +22,9 @@ import java.io.IOException;
 
 import static com.atherys.combat.AtherysCombat.*;
 
-@Plugin(id = ID, version = VERSION, name = NAME, description = DESCRIPTION)
+@Plugin(id = ID, version = VERSION, name = NAME, description = DESCRIPTION, dependencies = {
+        @Dependency(id = "atheryscode")
+})
 public class AtherysCombat {
 
     public static final String ID = "atheryscombat";
